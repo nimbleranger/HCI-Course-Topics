@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HCI Course Topics</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        #header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: 24px;
+        }
+        #nav {
+            background-color: #f4f4f4;
+            padding: 10px;
+            width: 200px;
+            height: 100vh;
+            box-sizing: border-box;
+        }
+        #content {
+            padding: 20px;
+            overflow-y: auto;
+            height: 100vh;
+            box-sizing: border-box;
+        }
+        .nav-link {
+            display: block;
+            padding: 8px;
+            text-decoration: none;
+            color: #000;
+            margin-bottom: 5px;
+        }
+        .nav-link:hover {
+            background-color: #ddd;
+        }
+        .page {
+            display: none;
+        }
+        .active {
+            display: block;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">HCI Course Topics</div>
+    <div style="display: flex;">
+        <div id="nav">
+            <a href="#welcome" class="nav-link" onclick="showPage('welcome')">Welcome</a>
+            <a href="#design-principles" class="nav-link" onclick="showPage('design-principles')">Design Principles for HCI</a>
+            <a href="#input-devices" class="nav-link" onclick="showPage('input-devices')">Specialized Input Devices</a>
+            <a href="#output-devices" class="nav-link" onclick="showPage('output-devices')">Specialized Output Devices</a>
+            <a href="#emerging-tech" class="nav-link" onclick="showPage('emerging-tech')">Emerging Technologies</a>
+        </div>
+        <div id="content">
+            <div id="welcome" class="page active">
+                <h2>Welcome to the HCI Course Topics Website</h2>
+                <p>This website contains links to key topics related to Human-Computer Interaction (HCI), including design principles, input and output devices, and emerging interface technologies. Use the navigation menu to explore each topic and access useful resources that will deepen your understanding of HCI concepts.</p>
+            </div>
+            <div id="design-principles" class="page">
+                <h2>Design Principles for HCI</h2>
+                <img src="images/image1.jpg" alt="Design Principles Illustration">
+                <p>Design principles in HCI focus on creating interfaces that are intuitive, efficient, and user-friendly. Key concepts include consistency, feedback, error prevention, and user control. These principles ensure that users have a seamless and productive experience.</p>
+                <ul>
+                    <li><a href="https://www.nngroup.com/articles/ten-usability-heuristics/" target="_blank">Nielsen Norman Group: Ten Usability Heuristics</a> - This site provides a comprehensive overview of usability heuristics, which are essential design principles in HCI (Nielsen, 1995).</li>
+                    <li><a href="https://www.smashingmagazine.com/2018/08/principles-human-computer-interaction/" target="_blank">Smashing Magazine: Principles of HCI</a> - An article that explains fundamental HCI principles and how they apply to user interface design (Smashing Magazine, 2018).</li>
+                </ul>
+                <p><strong>References:</strong></p>
+                <p>Nielsen, J. (1995). Ten Usability Heuristics. Retrieved from https://www.nngroup.com/articles/ten-usability-heuristics/</p>
+                <p>Smashing Magazine. (2018). Principles of Human-Computer Interaction. Retrieved from https://www.smashingmagazine.com/2018/08/principles-human-computer-interaction/</p>
+            </div>
+            <div id="input-devices" class="page">
+                <h2>Specialized Input Devices and Their Applications</h2>
+                <img src="images/image2.jpg" alt="Input Devices Illustration">
+                <p>Specialized input devices improve accessibility and efficiency for users. Examples include eye-tracking systems for individuals with disabilities, haptic controllers for immersive experiences, and gesture recognition devices used in virtual environments.</p>
+                <ul>
+                    <li><a href="https://www.techopedia.com/definition/24243/specialized-input-device" target="_blank">Techopedia: Specialized Input Devices</a> - This article explains various specialized input devices and their applications (Techopedia, 2020).</li>
+                    <li><a href="https://www.howtogeek.com/682143/the-best-specialized-input-devices/" target="_blank">How-To Geek: The Best Specialized Input Devices</a> - A guide to understanding and selecting specialized input devices for different needs (How-To Geek, 2020).</li>
+                </ul>
+                <p><strong>References:</strong></p>
+                <p>Techopedia. (2020). Specialized Input Device. Retrieved from https://www.techopedia.com/definition/24243/specialized-input-device</p>
+                <p>How-To Geek. (2020). The Best Specialized Input Devices. Retrieved from https://www.howtogeek.com/682143/the-best-specialized-input-devices/</p>
+            </div>
+            <div id="output-devices" class="page">
+                <h2>Specialized Output Devices and Their Applications</h2>
+                <img src="images/image3.jpg" alt="Output Devices Illustration">
+                <p>Specialized output devices enhance user interaction by providing feedback through various forms. 3D printers create physical models from digital designs, while VR headsets deliver immersive experiences. These technologies are used in fields such as medicine, education, and entertainment.</p>
+                <ul>
+                    <li><a href="https://www.explainthatstuff.com/output-devices.html" target="_blank">Explain That Stuff: Output Devices</a> - A resource explaining different types of output devices and their uses (Explain That Stuff, 2021).</li>
+                    <li><a href="https://www.livescience.com/10-amazing-output-devices.html" target="_blank">Live Science: Amazing Output Devices</a> - An article showcasing groundbreaking output technologies (Live Science, 2021).</li>
+                </ul>
+                <p><strong>References:</strong></p>
+                <p>Explain That Stuff. (2021). Output Devices. Retrieved from https://www.explainthatstuff.com/output-devices.html</p>
+                <p>Live Science. (2021). 10 Amazing Output Devices. Retrieved from https://www.livescience.com/10-amazing-output-devices.html</p>
+            </div>
+            <div id="emerging-tech" class="page">
+                <h2>Emerging Interface Concepts and Technologies</h2>
+                <img src="images/image4.jpg" alt="Emerging Technologies Illustration">
+                <p>Emerging interface technologies like augmented reality (AR), brain-computer interfaces (BCI), and voice-based systems are revolutionizing how we interact with machines. These technologies aim to create more natural and intuitive user experiences.</p>
+                <ul>
+                    <li><a href="https://www.wired.com/story/future-human-computer-interaction/" target="_blank">Wired: The Future of Human-Computer Interaction</a> - A look into how emerging technologies will change HCI (Wired, 2022).</li>
+                    <li><a href="https://www.forbes.com/sites/forbestechcouncil/2022/03/16/technologies-driving-the-future-of-interfaces/" target="_blank">Forbes: Technologies Driving the Future of Interfaces</a> - Insights on the latest interface concepts and their impact (Forbes, 2022).</li>
+                </ul>
+                <p><strong>References:</strong></p>
+                <p>Wired. (2022). The Future of Human-Computer Interaction. Retrieved from https://www.wired.com/story/future-human-computer-interaction/</p>
+                <p>Forbes. (2022). Technologies Driving the Future of Interfaces. Retrieved from https://www.forbes.com/sites/forbestechcouncil/2022/03/16/technologies-driving-the-future-of-interfaces/</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showPage(pageId) {
+            var pages = document.getElementsByClassName('page');
+            for (var i = 0; i < pages.length; i++) {
+                pages[i].classList.remove('active');
+            }
+            document.getElementById(pageId).classList.add('active');
+        }
+    </script>
+</body>
+</html>
